@@ -4,7 +4,7 @@ import ReactQuiz from './Quiz/ReactQuiz'
 function App() {
   return (
     <>
-      <ReactQuiz/>
+      <ReactQuiz
     </>
   )
 }

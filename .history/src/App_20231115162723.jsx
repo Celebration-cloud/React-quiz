@@ -1,10 +1,9 @@
 import './App.css'
-import ReactQuiz from './Quiz/ReactQuiz'
 
 function App() {
   return (
     <>
-      <ReactQuiz/>
+      <React
     </>
   )
 }
