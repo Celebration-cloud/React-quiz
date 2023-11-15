@@ -21,7 +21,6 @@ import QuestionList from "./QuestionList"
 
 function Question({time, totalQuestion, questionList, dispatch, num, userAnswer, score}) {
   const answer = questionList.answer
-  
   return (
     <QuestionList>
       <QuestionHead />

@@ -20,8 +20,8 @@ import QuestionHead from './QuestionHead'
 import QuestionList from "./QuestionList"
 
 function Question({time, totalQuestion, questionList, dispatch, num, userAnswer, score}) {
-  const answer = questionList.answer
-  
+  const answer = questionList.Answer
+  ifdocument.title.replace( `React Quiz || Question ${num + 1}`)
   return (
     <QuestionList>
       <QuestionHead />
