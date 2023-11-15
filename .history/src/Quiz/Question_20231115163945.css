@@ -9,7 +9,6 @@
 .quizBoard{
     text-align: left;
     width: 50%;
-    margin-bottom: 50px;
 }
 
 @media (max-width: 770px) {
@@ -17,6 +16,7 @@
     width: 80%;
 }
 .question{
-    height: 100%;
+    back
+    height: 100vh;
 }
 }

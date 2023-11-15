@@ -1,4 +1,4 @@
-import {useReducer, Fragment} from 'react'
+import {useReducer, useEffect, Fragment} from 'react'
 import Main from './Main'
 import Start from './Start'
 import Loading from './Loading'
@@ -13,6 +13,31 @@ function ReactQuiz() {
   const [state, dispatch] = useReducer(reducer, initialState)
   const {status, questionList, score, index, userAnswer, time} = state
   useFetchData(dispatch)
+  // useEffect(() => {
+  //   async function list() {
+  //     try {
+  //       const data = await fetch(
+  //         "https://react-quiz-api-zez9.onrender.com/Quiz",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //             accept: "application/json",
+  //           },
+  //         }
+  //       );
+  //       if(!data.ok) throw new Error("Something went wrong")
+  //       const res = await data.json()
+  //       dispatch({type: "questionList", payload: res})
+        
+  //     } catch (error) {
+  //       dispatch({type: "error"})
+  //     }
+  //   }
+  //   list()
+
+  // }, [])
+  
   return (
     <Fragment>
       <Main>
@@ -28,7 +53,7 @@ function ReactQuiz() {
             userAnswer={userAnswer}
             num={index}
             time={time}
-          /> : <FinishUp score={score} dispatch={dispatch}/>
+          /> : <FinishUp dispatch={dispatch}/>
         )}
       </Main>
     </Fragment>

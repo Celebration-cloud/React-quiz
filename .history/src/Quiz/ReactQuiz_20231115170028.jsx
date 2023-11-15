@@ -28,7 +28,7 @@ function ReactQuiz() {
             userAnswer={userAnswer}
             num={index}
             time={time}
-          /> : <FinishUp score={score} dispatch={dispatch}/>
+          /> : <FinishUp score= dispatch={dispatch}/>
         )}
       </Main>
     </Fragment>

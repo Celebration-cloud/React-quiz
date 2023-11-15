@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import './OptionList.css'
 function OptionList({time, answer, option, dispatch, userAnswer, points}) {
   function handleOption(e, opt) {

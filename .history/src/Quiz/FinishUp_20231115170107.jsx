@@ -7,7 +7,7 @@ function FinishUp({score, dispatch}) {
   return (
     <div>
       <p>finished</p>
-      <p>you scored: {score}</p>
+      <p>you</p>
       <button onClick={handleReset}>Reset</button>
     </div>
   )

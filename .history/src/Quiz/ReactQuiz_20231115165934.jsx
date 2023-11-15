@@ -1,4 +1,4 @@
-import {useReducer, Fragment} from 'react'
+import {useReducer, useEffect, Fragment} from 'react'
 import Main from './Main'
 import Start from './Start'
 import Loading from './Loading'
@@ -28,7 +28,7 @@ function ReactQuiz() {
             userAnswer={userAnswer}
             num={index}
             time={time}
-          /> : <FinishUp score={score} dispatch={dispatch}/>
+          /> : <FinishUp dispatch={dispatch}/>
         )}
       </Main>
     </Fragment>
