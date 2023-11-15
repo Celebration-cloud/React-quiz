@@ -1,0 +1,61 @@
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+}
+.li{
+    background-color: rgb(69, 64, 64);
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.wrong{
+    background-color: rgb(186, 35, 35);
+    padding: 10px;
+    color: aliceblue;
+    text-align: left;
+    padding-left: 20px;
+    width: 90%;
+    border-radius: 20px;
+}
+.right{
+    background-color: rgb(35, 186, 88);
+    color: aliceblue;
+    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.check{
+    background-color: aliceblue;
+    color: blue;
+    text-align: left;
+    border-radius: 20px;
+    width: 100%;
+    animation-name: opt;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.li:hover{
+    background-color: aliceblue;
+    color: blue;
+    width: 100%;
+    animation-name: opt;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes opt {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}

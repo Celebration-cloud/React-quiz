@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    background-color: linear-gradient(-45deg, #294bf8 0%, #4444b2 100% );
+}
+
+.timer{
+    background-color: transparent;
+    color: white;
+}
+.timer:hover{
+    border-color: transparent;
+}
+.next-btn{
+    margin-right: 10px;
+}
