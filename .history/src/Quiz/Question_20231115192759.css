@@ -3,8 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-
     width: 100%;
     height: 100vh;
     background: linear-gradient(-45deg, #294bf8 0%, #4444b2 100% );
@@ -18,12 +16,12 @@
     .quizBoard{
     width: 80%;
 }
-.question{
-    height: 40rlh;
+.quizBoard{
+    text-align: left;
+    width: 50%;
+    margin-bottom: 150px;
 }
-}
-@media (max-height: 425px) {
 .question{
-    height: 200svh;
+    height: 100%;
 }
 }

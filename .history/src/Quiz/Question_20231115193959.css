@@ -4,9 +4,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     width: 100%;
-    height: 100vh;
+    height: 100;
     background: linear-gradient(-45deg, #294bf8 0%, #4444b2 100% );
 }
 .quizBoard{
@@ -16,14 +15,10 @@
 
 @media (max-width: 770px) {
     .quizBoard{
+     /* margin-bottom: 150px; */
     width: 80%;
 }
 .question{
-    height: 40rlh;
-}
-}
-@media (max-height: 425px) {
-.question{
-    height: 200svh;
+    /* height: 200vmax; */
 }
 }
