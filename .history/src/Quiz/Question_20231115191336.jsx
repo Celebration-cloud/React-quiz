@@ -20,7 +20,7 @@ import QuestionHead from './QuestionHead'
 import QuestionList from "./QuestionList"
 
 function Question({time, totalQuestion, questionList, dispatch, num, userAnswer, score}) {
-  const answer = questionList.Answer
+  const answer = questionList.answer
   return (
     <QuestionList>
       <QuestionHead />
