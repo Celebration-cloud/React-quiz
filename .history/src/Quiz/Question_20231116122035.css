@@ -52,9 +52,6 @@
 .question{
     height: 100vh;
 }
-.boardFooter{
-    height: 100%;
-}
 }
 @media (max-width: 426px) {
 .question{
@@ -63,6 +60,9 @@
 }
 @media (max-height: 580px) {
 .question{
+    height: 100%;
+}
+.boardFooter{
     height: 100%;
 }
 }

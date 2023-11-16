@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 100vh;
+    height: 100;
 }
             /* The following CSS code will create a shadow effect around the buttons */
             button:focus {
@@ -51,9 +51,6 @@
 }
 .question{
     height: 100vh;
-}
-.boardFooter{
-    height: 100%;
 }
 }
 @media (max-width: 426px) {
