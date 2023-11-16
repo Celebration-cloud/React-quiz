@@ -24,8 +24,8 @@ function Question({time, totalQuestion, questionList, dispatch, num, userAnswer,
   return (
     <QuestionList>
       <QuestionHead />
-      <div className='boardFooter'>
-        <QuizBoard>
+      <div
+      <QuizBoard>
         <Stats>
           <QuizNum num={num} totalQuestion={totalQuestion} />
           <ScorePoint score={score} />
@@ -60,8 +60,6 @@ function Question({time, totalQuestion, questionList, dispatch, num, userAnswer,
           />
         )}
       </Footer>
-      </div>
-      
     </QuestionList>
   );
 }

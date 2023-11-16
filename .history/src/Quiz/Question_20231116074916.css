@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: space-between; */
+
     width: 100%;
     height: 100vh;
     background: linear-gradient(-45deg, #294bf8 0%, #4444b2 100% );
@@ -12,14 +14,17 @@
     width: 50%;
     height: 100%;
 }
+
 .boardFooter{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    gap: 80px;
 }
+            .boardFooter{
+                width: 100%;
+            }
             /* The following CSS code will create a shadow effect around the buttons */
             button:focus {
                 outline: 0;
@@ -50,16 +55,12 @@
     width: 80%;
 }
 .question{
-    height: 100vh;
+    height: 145svh;
 }
 }
-@media (max-width: 426px) {
+@media (max-hei: 425px) {
 .question{
-    height: 100vh;
 }
-}
-@media (max-height: 580px) {
-.question{
-    height: 100%;
+.boardFooter{
 }
 }

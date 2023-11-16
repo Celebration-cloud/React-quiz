@@ -20,8 +20,7 @@
     width: 100%;
     height: 100%;
 }
-            /* The following CSS code will create a shadow effect around the buttons */
-            button:focus {
+            /* The following CSS code will create a shadow effect around the buttons */button:focus {
                 outline: 0;
                 box-shadow: 0 0 0 2px rgba(13, 110, 253,
                 0.7);
