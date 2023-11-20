@@ -18,10 +18,9 @@ import QuizBoard from './QuizBoard'
 import Questions from './Questions'
 import QuestionHead from './QuestionHead'
 import QuestionList from "./QuestionList"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function Question({time, totalQuestion, questionList, dispatch, num, userAnswer, score}) {
-
   const answer = questionList.Answer
   useEffect(() => {
     document.title = `React Quiz || Question ${num + 1}`

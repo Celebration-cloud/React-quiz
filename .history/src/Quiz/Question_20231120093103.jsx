@@ -18,10 +18,10 @@ import QuizBoard from './QuizBoard'
 import Questions from './Questions'
 import QuestionHead from './QuestionHead'
 import QuestionList from "./QuestionList"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function Question({time, totalQuestion, questionList, dispatch, num, userAnswer, score}) {
-
+  const [fin, setFin] = useState(window.innerHeight)
   const answer = questionList.Answer
   useEffect(() => {
     document.title = `React Quiz || Question ${num + 1}`
@@ -30,8 +30,22 @@ function Question({time, totalQuestion, questionList, dispatch, num, userAnswer,
     }
   }, [num])
   
+  useEffect(function(){
+
+    function size(){
+     window.innerHeight
+    return normSize
+  }
+       document.addEventListener('resize', size)
+      
+    size()
+    return ()=> {
+      window.removeEventListener("resize", resize)
+    }
+  }, [])
+  console.log(fin)
   return (
-    <QuestionList >
+    <QuestionList>
       <QuestionHead />
       <>
         <QuizBoard>

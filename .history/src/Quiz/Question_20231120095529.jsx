@@ -30,6 +30,18 @@ function Question({time, totalQuestion, questionList, dispatch, num, userAnswer,
     }
   }, [num])
   
+  
+  useEffect(function(){
+    function size() {
+      setFin(window.innerHeight);
+    }
+    window.addEventListener("resize", size);
+    size();
+    console.log(fin);
+    return () => {
+      window.removeEventListener("resize", size);
+    };
+  }, [fin])
   return (
     <QuestionList >
       <QuestionHead />

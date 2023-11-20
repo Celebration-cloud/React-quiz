@@ -18,7 +18,7 @@ import QuizBoard from './QuizBoard'
 import Questions from './Questions'
 import QuestionHead from './QuestionHead'
 import QuestionList from "./QuestionList"
-import { useEffect } from 'react'
+import { useEffect} from 'react'
 
 function Question({time, totalQuestion, questionList, dispatch, num, userAnswer, score}) {
 
@@ -30,6 +30,18 @@ function Question({time, totalQuestion, questionList, dispatch, num, userAnswer,
     }
   }, [num])
   
+  
+  useEffect(function(){
+    function size() {
+      setFin(window.innerHeight);
+    }
+    window.addEventListener("resize", size);
+    size();
+    console.log(fin);
+    return () => {
+      window.removeEventListener("resize", size);
+    };
+  }, [fin])
   return (
     <QuestionList >
       <QuestionHead />

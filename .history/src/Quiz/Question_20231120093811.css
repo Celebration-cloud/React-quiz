@@ -3,9 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
-    height: 100vh;
+    box-sizing: content-box;
     padding: 10px;
+    height: 100%;
     background: linear-gradient(-45deg, #294bf8 0%, #4444b2 100% );
 }
 .quizBoard{
@@ -44,11 +44,10 @@
 }
 @media (max-width: 426px) {
 .question{
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 }
-@media (max-height: 510px) {
+@media (max-height: 580px) {
 .question{
-    height: 100vh;
 }
 }

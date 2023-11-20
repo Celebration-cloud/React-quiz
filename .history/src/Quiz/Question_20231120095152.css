@@ -47,7 +47,7 @@
     box-sizing: border-box;
 }
 }
-@media (max-height: 510px) {
+@media (max-height: 580px) {
 .question{
     height: 100vh;
 }
