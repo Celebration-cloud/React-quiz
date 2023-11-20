@@ -1,0 +1,27 @@
+/* The CSS code you provided is defining the styles for a footer element and its child elements. */
+.footer{
+    bottom: 0;
+    align-self: flex-end;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: linear-gradient(-45deg, #294bf8 0%, #4444b2 100% );
+}
+
+.timer{
+    background-color: transparent;
+    color: white;
+}
+.timer:hover{
+    border-color: transparent;
+}
+.next-btn{
+    margin-right: 10px;
+}
+@media (max-width: 770px) {
+    .footer{
+        justify-content: space-between;
+    }
+}
